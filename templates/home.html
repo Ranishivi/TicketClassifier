@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>
+            Ticket
+        </title>
+        <style>
+            hr {
+                 border: none; 
+                 height: 5px; 
+                 background: linear-gradient(to right, #ffffff, #C9D6CE);
+                 width: 100%; 
+                 margin: 20px 0; 
+                 border-radius: 10px; 
+              }
+
+            fieldset{
+                background-color: #C9D6CE;
+                border: 2px groove;
+            }
+
+            .fieldset-auto-width{
+                display: inline-block;
+            }
+
+           input[type="submit"]:hover {
+           background-color: #789885;
+           }
+
+        </style>
+    </head>
+    <body bgcolor="#789885">
+        <font color="white"  face="Roboto">
+        <center>
+        <h1>
+               <b>  TICKET CLASSIFIER </b>
+               <hr size = 5>
+        </h1>
+        <br>
+        <br>
+        <font size="4" color="#789384">
+        <form method="post" action="/classify">
+            <fieldset class = 'fieldset-auto-width'>
+                <br>
+                <label><b> TICKET: </b>  </label>
+                <input type="text" name="ticket" placeholder="Enter the query..." size=120>
+                <br>
+                <br>
+                <input type="submit" value="Classify">
+            </form>
+        <font size="6">
+         
+        {% if result %}
+        <B><p> {{ result }} </p></B>
+        {% endif %}
+            </fieldset>
+        </center>
+        </font>
+    </body>
+</html>
