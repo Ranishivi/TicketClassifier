@@ -1,5 +1,5 @@
 # TICKET CLASSIFIER
-This project aims to develop a model which takes tickets raised by customers in a banking platform as input and classify them into different classes for better routing experience.
+This project aims to develop a model which takes tickets raised by customers in a banking platform as input and classify them for better routing experience into 5 classes: Bank Account Services, Theft/Dispute Reporting, Credit Card/Pre-paid Card, Mortgage/Loan Management, and Others.
 ## Objectives:
 * Data Preprocessing: Utilized python libraries- Numpy, Pandas, NLTK and SpaCy for data cleaning and preprocessing.
 * EDA: Performed Exploratory Data Analysis by making use of python visualization library- Matplotlib.
